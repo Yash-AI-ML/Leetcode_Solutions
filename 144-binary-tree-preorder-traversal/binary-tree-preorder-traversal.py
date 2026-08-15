@@ -9,7 +9,7 @@ class Solution:
         def __init__(self):
             self.ans = []
         # Base Case
-        if root is None:
+        if root == None:
             return 
         self.ans.append(root.val)
         self.preorder(root.left) # left subtree
