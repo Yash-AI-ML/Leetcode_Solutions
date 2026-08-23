@@ -8,7 +8,7 @@
 class Solution:
     def __init__(self):
         self.ans = True
-    def height(self,root : Optional[TreeNode]) -> int :
+    def height(self,root ):
         if root == None:
                return 0
         lefth = self.height(root.left)
