@@ -6,11 +6,7 @@ int sumOfTheDigitsOfHarshadNumber(int x) {
         sum+=rem;
         temp/=10;
     }
-    if(x%sum==0){
-        return sum;
-    }
-    else{
-        return -1;
-    }
+
+    return x%sum==0?sum:-1;
     
 }
