@@ -6,4 +6,4 @@ class Solution:
            heapq.heappush(h,x)
            if len(h)>k:
              heapq.heappop(h)
-        return heapq.heappop(h)
+        return heapq.nlargest(k,h)[-1]
