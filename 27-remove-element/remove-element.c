@@ -10,7 +10,6 @@ int removeElement(int* arr, int size, int val) {
     }
     int st = 0;
     int end = size-1;
-    int change = 0;
     while (st<=end){
         while(st<=end && arr[end]== val){
             end--;
