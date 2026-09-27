@@ -1,13 +1,3 @@
 bool isPowerOfTwo(int n) {
-    long long ans = 1;//take long long due to integer overflow 
-    if(n ==1){ 
-        return true; //edge case
-    }
-    while(ans < n){
-        ans*=2;
-        if(ans == n){
-            return true;
-        }
-    }
-    return false;
+    return n > 0 && (n & (n - 1)) == 0;//every power of 2 number has one 1 in its binary form
 }
