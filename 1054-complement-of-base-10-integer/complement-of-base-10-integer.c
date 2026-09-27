@@ -1,7 +1,7 @@
 int bitwiseComplement(int n) {
     int m =n;
     if(n==0){
-        return 1;
+        return 1; //edge case 
     }
     int mask = 0;
     while(m!=0){
