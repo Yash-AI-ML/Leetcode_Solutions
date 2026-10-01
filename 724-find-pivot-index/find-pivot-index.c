@@ -7,9 +7,7 @@ int pivotIndex(int* nums, int size) {
     for(int i=0; i<size; i++){
         int rs = sum -nums[i] -ls;
         if(ls == rs)return i;
-        else{
-            ls += nums[i];
-        }
+        ls += nums[i];
     }
     return -1;
 }
