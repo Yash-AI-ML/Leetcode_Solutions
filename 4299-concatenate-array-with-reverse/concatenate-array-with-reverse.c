@@ -8,10 +8,7 @@ int* concatWithReverse(int* nums, int size, int* returnSize) {
     for( i; i<size; i++){
         arr[i] = nums[i];
     }
-    for(int i=0; i<size; i++){
-        printf("%d ",arr[i]);
-    }
-    printf("%d is value of index of arr",i);
+
     int end = size-1;
     while(end >=0){
         arr[i] = nums[end];
