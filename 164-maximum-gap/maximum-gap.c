@@ -34,10 +34,10 @@ int maximumGap(int* arr, int size) {
     }
 
     mergesort(arr,0,size-1);
-    int md = arr[size-1] - arr[size -2];
-    for(int i=0 ;i<size-1; i++){
-        if((arr[i+1]-arr[i])>md){
-            md = arr[i+1]-arr[i];
+    int md = 0;
+    for(int i=1 ;i<size; i++){
+        if((arr[i]-arr[i-1])>md){
+            md = arr[i]-arr[i-1];
         }
     }
     return md;
