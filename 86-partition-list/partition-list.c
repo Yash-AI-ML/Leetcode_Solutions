@@ -10,16 +10,15 @@ struct ListNode* partition(struct ListNode* head, int x) {
     struct ListNode *smalltail = small;
     struct ListNode *large = malloc(sizeof(struct ListNode));
     struct ListNode *largetail = large;
-    struct ListNode *curr = head;
-    while(curr != NULL){
-        if(curr->val < x){
-            smalltail->next = curr;
-            curr = curr->next;
+    while(head != NULL){
+        if(head->val < x){
+            smalltail->next = head;
+            head = head->next;
             smalltail = smalltail->next;
         }
         else{
-            largetail ->next = curr;
-            curr = curr->next;
+            largetail ->next = head;
+            head = head->next;
             largetail = largetail ->next;
         }    
     }
