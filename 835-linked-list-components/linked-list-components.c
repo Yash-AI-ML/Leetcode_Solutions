@@ -16,6 +16,6 @@ int numComponents(struct ListNode* head, int* nums, int numsSize) {
         count ++;
         head = head -> next;
     }
-    free(inset);
+
     return count;    
 }
