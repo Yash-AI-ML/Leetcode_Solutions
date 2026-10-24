@@ -11,9 +11,10 @@ int numComponents(struct ListNode* head, int* nums, int numsSize) {
         inset[nums[i]] = true;
     }
     int count = 0;
-    for(struct ListNode* curr = head; curr!= NULL; curr= curr->next){
-        if(inset[curr->val] && (!curr->next || !inset[curr->next->val]))
+    while(head){
+        if(inset[head->val] && (!head->next || !inset[head->next->val]))
         count ++;
+        head = head -> next;
     }
     free(inset);
     return count;    
