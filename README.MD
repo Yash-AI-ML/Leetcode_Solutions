@@ -71,10 +71,6 @@ My current practice includes:
 * Searching
 * Sorting
 * Two Pointers
-* Hashing
-* Dynamic Programming
-* Graphs
-* Greedy Algorithms
 
 > More topics will be added as I progress.
 
