@@ -14,7 +14,7 @@ struct ListNode* reverseBetween(struct ListNode* head, int left, int right) {
         // used r-l-1 cz first will be at right place after r-l-1 iteration so no need for right-left no of iterations
 
         struct ListNode *moved = first->next;
-        first->next = moved->next;
+        first->next = first->next->next;
         moved->next = before->next;
         before->next = moved;
     }
